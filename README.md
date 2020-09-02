@@ -42,6 +42,9 @@ Find the file `index.js` and complete the tasks.
 Edit the `ReadMe` file with your answers.
 
 1. In your own words, define closure (1-2 sentences).
+
+Closure is where an inner function can access the variables of an outer function.
+
 2. Study the following code, then answer the questions below.
 
 ```js
@@ -60,11 +63,23 @@ const zoesRoll = personalDice("Zoe");
 
 dansRoll();
 dansRoll();
+
+console.log(newRoll)
 ```
 
 a. Where is closure used in this code? How can you tell?
+
+The unnamed inner function is using the oouter function personalDice's parameter 'name.'
+We can tell, because the inner function is accessing the outer function's parameter.
+
 b. Compare and contrast calling `dansRoll` the first and second time. What is always the same? What could change?
+
+The name would stay the same. The roll should change, because it is random.
+
 c. What is the lexical scope of `newRoll`? 
+
+newRoll can only be accessed inside of the unnamed inner function.
+
 
 ### Task 2c - Exit Ticket
 
